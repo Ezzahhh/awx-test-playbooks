@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: delete a particular instance by its ID
+      amazon.aws.ec2_instance:
+        state: terminated
+        region: "{{ region }}"
+        instance_ids:
+          - "{{ instance_id }}"
