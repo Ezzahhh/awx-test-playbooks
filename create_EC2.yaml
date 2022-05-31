@@ -2,7 +2,7 @@
   tasks:
   - name: start an instance and Add EBS
     amazon.aws.ec2_instance:
-      name: "test-awx-instance"
+      name: {{ instance_name }}
       vpc_subnet_id: {{ subnet_id }}
       instance_type: {{ instance_type }}
       key_name: {{ key_name }}
