@@ -18,4 +18,4 @@
         region: "{{ specific_region }}"
         state: "started"
         tags:
-          Environment: "{{ environment }}"
+          Environment: "{{ tag_environment }}"
